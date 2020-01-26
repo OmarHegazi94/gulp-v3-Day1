@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/OmarHegazi94/gulp-v3-Day1#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^3.9.0"
   }
 }
