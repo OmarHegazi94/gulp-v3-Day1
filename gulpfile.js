@@ -4,6 +4,10 @@ const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+
+
 
 gulp.task('compile-less', () => {
     gulp.src('./assets/style/css/*.less')
@@ -28,6 +32,13 @@ gulp.task('minify-css', () => {
 
     .pipe(gulp.dest('./dist/style/css/min'))
 });
+
+// minify scss + sass only + concat on css
+gulp.task('compile-sass', () => {
+    gulp.src('./assets/style/css/*.+(scss|sass)')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist/style/css/sass'))
+})
 
 // gulp.task('rename', () => {
 //     gulp.src('./dist/style/css/min/*.css')
