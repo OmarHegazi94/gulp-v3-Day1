@@ -37,8 +37,13 @@ gulp.task('minify-css', () => {
 gulp.task('compile-sass', () => {
     gulp.src('./assets/style/css/*.+(scss|sass)')
     .pipe(sass().on('error', sass.logError))
+    // bundle all css
+    .pipe(concat('all.min.css'))
+
     .pipe(gulp.dest('./dist/style/css/sass'))
 })
+
+// add live reload
 
 // gulp.task('rename', () => {
 //     gulp.src('./dist/style/css/min/*.css')
