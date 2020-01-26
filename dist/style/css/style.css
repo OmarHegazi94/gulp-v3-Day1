@@ -156,6 +156,7 @@ sup {
 p a,
 h5 a {
   font-weight: bold;
+  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 h1,
@@ -191,6 +192,7 @@ h5 {
   background-color: #61c0bd;
   font-size: 18px;
   font-family: "muse-500", Arial, sans-serif;
+  -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
 }
 .btn-custom:hover {
@@ -202,6 +204,7 @@ h5 {
   padding: 15px 25px;
   border: none;
   background: #ffffff;
+  -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
   transition: padding-top 0.3s, padding-bottom 0.3s;
 }
 #navbar .navbar-toggler {
@@ -213,12 +216,14 @@ h5 {
   font-weight: 400;
   font-size: 14px;
   font-family: "muse-500", Arial, sans-serif;
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 #navbar .navbar-nav .nav-item .nav-link.active,
 #navbar .navbar-nav .nav-item .nav-link:hover {
   background: #61c0bd;
   color: #ffffff !important;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 /************************************** HEADER **************************************/
@@ -305,6 +310,7 @@ h5 {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   opacity: 0;
+  -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
 }
 #mission .container h3,
@@ -356,7 +362,9 @@ h5 {
   margin-bottom: 20px;
 }
 #members .container #members-slider img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 #members .container .owl-carousel .owl-dots.disabled {
@@ -381,6 +389,7 @@ h5 {
 }
 #event .container .row .col-md-4 .card a img:hover {
   opacity: 1;
+  -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
 }
 #event .container .row .col-md-4 .card .card-text {
